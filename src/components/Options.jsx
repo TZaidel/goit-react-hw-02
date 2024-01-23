@@ -1,12 +1,10 @@
-export default function Options({onUpdate}){
+export default function Options({onUpdate, onReset}){
     return (
-        <>
-            <div>
+        <div>
             <button onClick= {()=> onUpdate("good")}>Good</button>
-            <button >Neutral</button>
-            <button>Bad</button>
-            <button>Reset</button>
-            </div>
-        </>
+            <button onClick={()=> onUpdate("neutral")} >Neutral</button>
+            <button onClick={()=> onUpdate("bad")}>Bad</button>
+            <button onClick={()=> onReset()} >Reset</button>
+        </div>
     )
 }

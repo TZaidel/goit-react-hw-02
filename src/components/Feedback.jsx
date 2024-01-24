@@ -11,7 +11,6 @@ export default function Feedback({ value: { good, neutral, bad } }) {
                     <li>Bad: {bad} </li>
                     {total > 0 && <li>Total: {total} </li>}
                     {good > 0 && <li>Positive: {positive}%</li>}
-                
                 </ul>
             } 
         </>

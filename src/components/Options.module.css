@@ -1,0 +1,16 @@
+.btnList {
+  background-color: red;
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btnOption {
+  transition: background-color 2s;
+}
+
+.btnOption:hover {
+  color: red;
+  background-color: #00000084;
+}
